@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Cadastro
+    </title>
+    <script src="https://kit.fontawesome.com/ce4513a7d0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css cadastro/style.css">
+</head>
+
+
+<body>
+    <header class="header">
+        <div class="container_header grid">
+
+            <img src="img/Group.png" alt="">
+            <nav id="links" class="nav_header">
+                <a href="#início" onclick=botaoDomenu()>início</a>
+                <a href="#horário" onclick=botaoDomenu()>horário</a>
+                <a href="#login" onclick=botaoDomenu()>login</a>
+                <a href="#campeonatos" onclick=botaoDomenu()>campeonatos</a>
+                <a href="#noticias" onclick=botaoDomenu()>noticias</a>
+            </nav>
+            <a class="btn_menu" href="#" onclick=botaoDomenu(0)>
+                <i class="fas fa-bars"></i>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section id="início" class="cadastro_main">
+
+            <div class="container_banner">
+                <h1>Cadastro de jogador</h1>
+            </div>
+
+            <form class="container_input">
+
+                <div class="box_banner">
+                    <span>Nome</span>
+                    <input class="input_cadastro" type="email" name="" id="">
+                </div>
+                <div class="box_banner">
+                    <span>Nick name</span>
+                    <input class="input_cadastro" type="email" name="" id="">
+                </div>
+                <div class="box_banner">
+                    <span>Data De Nasc.</span>
+                    <input class="input_cadastro" type="email" name="" id="">
+                </div>
+                <div class="box_banner">
+                    <span>Equipe</span>
+                    <input class="input_cadastro" type="email" name="" id="">
+                </div>
+                <div class="box_banner">
+                    <span>Senha</span>
+                    <input class="input_cadastro" type="email" name="" id="">
+                </div>
+
+            </form>
+            <button class="btn_cadastrar">cadastrar</button>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="grid container_foother">
+            <div class="container_menu_foother">
+                <div class="container_links">
+                    <span class="container_links_span">Lins Úteis</span>
+                    <ul class="li">
+                        <li><a href="">Regras de utilização</a></li>
+                        <li><a href="">Suport</a></li>
+                        <li><a href="">Central de ajuda</a></li>
+                        <li><a href="">Mande nos uma mensagem</a></li>
+                    </ul>
+                </div>
+                <div class="container_paginas">
+                    <span class="container_pagina_span">Páginas</span>
+                    <ul class="li">
+                        <li><a href="">Ínicio</a></li>
+                        <li><a href="">Campeonatos</a></li>
+                        <li><a href="">Classificações</a></li>
+                        <li><a href="">Notícias</a></li>
+                        <li><a href="">Login/Cadastro</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <img class="box_links_img" src="img/Group.png" alt="">
+            
+            <div class="box_container_foother">
+                <span class="conatiner_clã">Faça parte do nosso clan, assine nossa newsletter!</span>
+                <div class="links_btn">
+                    <input class="input_email_foother" type="text" name="E-mail" id="input_email" placeholder="E-mail">
+                    <button class="btn_cadastrar_foother">cadastrar</button>
+                </div>
+                <div class="container_links_img">
+                    <span>Siga-nos em:</span>
+                    <img src="img/group 89.png" alt="">
+                    <img src="img/instagram 1.png" alt="">
+                    <img src="img/youtube 1.png" alt="">
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        function botaoDomenu() {
+            var menu = document.getElementById("links");
+            if (screen.width<= 420){
+                if (menu.style.display === "flex") {
+                    //esconder o menu 
+                    menu.style.display = "none";
+                } else {
+                    //mostrar o menu
+                    menu.style.display = "flex";
+                    menu.style.background = "black"
+                }
+                
+            }
+        }
+    </script>
+</body>
+
+</html>
